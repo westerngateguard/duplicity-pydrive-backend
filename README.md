@@ -59,6 +59,11 @@ uses_netloc = ['ftp',
                'copy',
                'pydrive']
 
+try:
+    pu = urlparse.urlparse(url_string)
+except Exception:
+    raise InvalidBackendURL("Syntax error in: %s" % url_string)
+
 if pu.query:     
     try:
         self.keyfile = urlparse.parse_qs(pu.query)['keyfile']
