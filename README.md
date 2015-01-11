@@ -1,5 +1,7 @@
 # duplicity-pydrive-backend
 
+Currently duplicity uses gdocs backend for Google Drive backups. gdocs uses deprecated API and don't allow backups for managed Google accounts. PyDrive backend solves both of those problems.
+
 ## Install dependecies
 ```
 apt-get build-dep duplicity
@@ -70,7 +72,7 @@ uses_netloc = ['ftp',
                'mega',
                'copy']
 ```
-And change to this (add "pydrive to the end of the list):
+And change to this (add "pydrive" to the end of the list):
 ```
 uses_netloc = ['ftp',
                'ftps',
