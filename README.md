@@ -1,5 +1,7 @@
 # duplicity-pydrive-backend
 
+Pydrive backend is merged now in the development version of duplicity, so better use it from there.
+
 Currently duplicity uses gdocs backend for Google Drive backups. gdocs uses deprecated API and don't allow backups for managed Google accounts. PyDrive backend solves both of those problems.
 
 ## Install dependecies
